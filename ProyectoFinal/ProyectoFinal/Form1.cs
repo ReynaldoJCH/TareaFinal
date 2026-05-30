@@ -14,6 +14,8 @@ namespace ProyectoFinal
     {
         private Timer timerMensaje;
 
+        List<Producto> listaProductos = new List<Producto>();
+
         string rutaImagen = "";
 
         public Form1()
@@ -64,6 +66,22 @@ namespace ProyectoFinal
             {
                 MostrarMensaje("No se selecciono un archivo", true);
             }
+        }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            Producto p = new Producto();
+
+            p.Nombre = txtNombreProducto.Text;
+            p.Precio = txtPrecioProducto.Text;
+            p.Descripcion = txtDescripcionProducto.Text;
+            p.Telefono = txtTelefono.Text;
+            p.Productora = txtProductora.Text;
+            p.Imagen = rutaImagen;
+
+            listaProductos.Add(p);
+
+            MostrarMensaje("Producto guardado");
         }
     }
     class Producto

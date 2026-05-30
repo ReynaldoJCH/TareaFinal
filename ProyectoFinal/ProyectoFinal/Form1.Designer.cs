@@ -143,6 +143,7 @@
             this.btnAgregarProducto.Text = "Guardar";
             this.btnAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // btnAgregarImagen
             // 
