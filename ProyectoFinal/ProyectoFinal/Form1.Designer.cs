@@ -47,6 +47,7 @@
             this.txtPrecioProducto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagenProducto)).BeginInit();
@@ -151,6 +152,7 @@
             this.btnAgregarImagen.TabIndex = 123;
             this.btnAgregarImagen.Text = "Agregar imagen";
             this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
             // 
             // pictureBoxImagenProducto
             // 
@@ -221,6 +223,10 @@
             this.txtNombreProducto.Size = new System.Drawing.Size(226, 20);
             this.txtNombreProducto.TabIndex = 115;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +278,7 @@
         private System.Windows.Forms.TextBox txtPrecioProducto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombreProducto;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
