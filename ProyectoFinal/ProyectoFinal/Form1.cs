@@ -82,8 +82,29 @@ namespace ProyectoFinal
             listaProductos.Add(p);
 
             MostrarMensaje("Producto guardado");
+            LimpiarCampos();
+        }
+        private void LimpiarCampos()
+        {
+            List<TextBox> campos = new List<TextBox>()
+            {
+                txtNombreProducto, txtPrecioProducto, txtDescripcionProducto, txtProductora, txtTelefono
+            };
+
+            foreach (TextBox txt in campos)
+            {
+                txt.Clear();
+            }
+            if (pictureBoxImagenProducto.Image != null)
+            {
+                pictureBoxImagenProducto.Image.Dispose();
+                pictureBoxImagenProducto.Image = null;
+            }
+
+            rutaImagen = "";
         }
     }
+
     class Producto
     {
         public string Nombre { get; set; }
