@@ -70,6 +70,9 @@ namespace ProyectoFinal
 
         private void btnAgregarProducto_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+                return;
+
             Producto p = new Producto();
 
             p.Nombre = txtNombreProducto.Text;
@@ -84,6 +87,28 @@ namespace ProyectoFinal
             MostrarMensaje("Producto guardado");
             LimpiarCampos();
         }
+
+        private bool ValidarCampos()
+        {
+            List<TextBox> campos = new List<TextBox>()
+            {
+                txtNombreProducto, txtPrecioProducto, txtDescripcionProducto, txtTelefono, txtProductora
+            };
+
+            foreach (TextBox txt in campos)
+            {
+                if (string.IsNullOrWhiteSpace(txt.Text))
+                {
+                    string nombreCampo = txt.Tag != null ? txt.Tag.ToString() : "este campo";
+                    MostrarMensaje($"El campo {nombreCampo} esta vacío", true);
+                    txt.Focus();
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         private void LimpiarCampos()
         {
             List<TextBox> campos = new List<TextBox>()
