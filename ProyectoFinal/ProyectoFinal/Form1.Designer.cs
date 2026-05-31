@@ -114,6 +114,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(163, 20);
             this.txtTelefono.TabIndex = 127;
+            this.txtTelefono.Tag = "Telefono";
             // 
             // label6
             // 
@@ -131,6 +132,7 @@
             this.txtProductora.Name = "txtProductora";
             this.txtProductora.Size = new System.Drawing.Size(226, 20);
             this.txtProductora.TabIndex = 125;
+            this.txtProductora.Tag = "Productora";
             // 
             // btnAgregarProducto
             // 
@@ -189,6 +191,7 @@
             this.txtDescripcionProducto.Name = "txtDescripcionProducto";
             this.txtDescripcionProducto.Size = new System.Drawing.Size(226, 20);
             this.txtDescripcionProducto.TabIndex = 119;
+            this.txtDescripcionProducto.Tag = "Descripcion";
             // 
             // label3
             // 
@@ -206,6 +209,7 @@
             this.txtPrecioProducto.Name = "txtPrecioProducto";
             this.txtPrecioProducto.Size = new System.Drawing.Size(163, 20);
             this.txtPrecioProducto.TabIndex = 117;
+            this.txtPrecioProducto.Tag = "Precio";
             // 
             // label2
             // 
@@ -223,6 +227,7 @@
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(226, 20);
             this.txtNombreProducto.TabIndex = 115;
+            this.txtNombreProducto.Tag = "Nombre del producto";
             // 
             // openFileDialog1
             // 
