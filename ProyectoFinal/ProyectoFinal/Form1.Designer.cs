@@ -256,6 +256,7 @@
             this.Controls.Add(this.txtNombreProducto);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagenProducto)).EndInit();
