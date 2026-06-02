@@ -1,1 +1,8 @@
-hola
+Mejoras propuestas:
+
+Validar que el precio solo acepte números.
+Validar el formato del teléfono.
+
+Observaciones:
+
+El sistema cumple con las funciones básicas de registro de productos.
