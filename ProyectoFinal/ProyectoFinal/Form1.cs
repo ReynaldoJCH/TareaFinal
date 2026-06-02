@@ -100,12 +100,12 @@ namespace ProyectoFinal
                 if (string.IsNullOrWhiteSpace(txt.Text))
                 {
                     string nombreCampo = txt.Tag != null ? txt.Tag.ToString() : "este campo";
-                    MostrarMensaje($"El campo {nombreCampo} esta vacío", true);
+                    MostrarMensaje($"El  campo {nombreCampo} esta vacío", true);
                     txt.Focus();
                     return false;
                 }
             }
-
+            //
             return true;
         }
 
